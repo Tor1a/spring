@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="4.0"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee                       http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+	
+	<!-- 웹 어플리케이션에서 받아들이는 모든 요청에 대해  servletAppContext가 처리하도록 세팅 -->
+	 <servlet-mapping>
+        <servlet-name>servletAppContext</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!-- 요청을 분석해서 컨트롤러 선택하는 서블릿 지정 frontconroller information역할을 한다. -->
+    <servlet>
+        <servlet-name>servletAppContext</servlet-name>
+		<!-- 스프링에서 제공하는 frontconroller -->
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLlocation</param-name>
+			<param-value>/WEB-INF/config/wervlet-context.xml</param-value>
+		</init-param>
+    </servlet>
+</web-app>

@@ -1,0 +1,17 @@
+package com.jjang051.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class BoardController {
+	
+	@RequestMapping("/Board/List.do")
+	public String list() {
+		return "board/lsit";
+	}
+	@RequestMapping("/Board/Write.do")
+	public String write() {
+		return "board.write";
+	}
+}

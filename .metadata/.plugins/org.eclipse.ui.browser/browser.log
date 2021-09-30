@@ -1,0 +1,13 @@
+
+9월 28, 2021 15:49:40.617 NEW SESSION
+9월 28, 2021 15:49:40.617 [12648:3152:0928/154940.614:ERROR:device_event_log_impl.cc(214)] [15:49:40.614] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 28, 2021 15:49:40.635 [12648:3152:0928/154940.635:ERROR:device_event_log_impl.cc(214)] [15:49:40.635] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+9월 28, 2021 15:52:23.734 [7848:1076:0928/155223.734:ERROR:device_event_log_impl.cc(214)] [15:52:23.734] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 28, 2021 15:52:23.736 [7848:1076:0928/155223.734:ERROR:device_event_log_impl.cc(214)] [15:52:23.734] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 28, 2021 15:52:23.749 [7848:1076:0928/155223.749:ERROR:device_event_log_impl.cc(214)] [15:52:23.749] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+9월 28, 2021 15:53:35.551 [15956:15760:0928/155335.550:ERROR:device_event_log_impl.cc(214)] [15:53:35.551] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: 시스템에 부착된 장치가 작동하지 않습니다. (0x1F)
+9월 28, 2021 15:53:35.614 [15956:15760:0928/155335.613:ERROR:device_event_log_impl.cc(214)] [15:53:35.614] Bluetooth: bluetooth_adapter_winrt.cc:1073 Getting Default Adapter failed.
+9월 28, 2021 17:19:46.89 [15956:15760:0928/171946.088:ERROR:device_event_log_impl.cc(214)] [17:19:46.089] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+9월 28, 2021 17:19:46.115 [15956:15760:0928/171946.115:ERROR:device_event_log_impl.cc(214)] [17:19:46.115] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)
+9월 28, 2021 17:19:46.939 [15956:15760:0928/171946.939:ERROR:device_event_log_impl.cc(214)] [17:19:46.938] USB: usb_service_win.cc:258 Failed to get device driver name: 요소가 없습니다. (0x490)
+9월 28, 2021 17:19:46.984 [15956:15760:0928/171946.983:ERROR:device_event_log_impl.cc(214)] [17:19:46.983] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: 사용 가능한 데이터가 없습니다. (0x103)

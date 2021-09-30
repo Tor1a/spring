@@ -1,0 +1,8 @@
+127.0.0.1 - - [30/Sep/2021:16:49:32 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /09-SpringCorona02/ HTTP/1.1" 200 744
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /09-SpringCorona02/js/gsap/gsap.min.js HTTP/1.1" 200 63403
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /09-SpringCorona02/js/jquery-3.6.0.min.js HTTP/1.1" 200 89501
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /09-SpringCorona02/css/layout.css HTTP/1.1" 200 1096
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /09-SpringCorona02/js/corona.js HTTP/1.1" 200 2322
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:34 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [30/Sep/2021:16:49:35 +0900] "GET /09-SpringCorona02/ApiCall.do?date=20210927 HTTP/1.1" 200 5768
