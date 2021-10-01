@@ -1,0 +1,103 @@
+@import "vars";
+h1 {
+    color:#fff;
+    text-align: center;
+    font-size: 42px;
+    padding:50px 0;
+}
+.calendarWrap {
+    position: absolute;
+    top:50px;
+    right:50px;
+    .dateBox input {
+        margin-bottom: 20px;
+        width:400px;
+        height: 50px;
+        background: fff;
+        outline: none;
+        padding:0 10px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        border: none;
+        background-color: rgb(3, 104, 187);
+        color:#fff;
+        font-size: 20px;
+        font-weight: 500;
+        //overflow: hidden;
+        @include longShadow( darken(rgb(3, 104, 187),10),right,100);
+    }
+}
+#calendar {
+    width:400px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    padding:15px;
+
+    .calendarBox {
+        width:100%;
+        .header {
+            display: flex;
+            height: 60px;
+            justify-content: space-between; // 가로 
+            align-items: center; //세로
+            .monthTitle {
+                .month {
+                    font-weight: 700;
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+        .days {
+
+        }
+        .dates {
+            .itemList {
+                li {
+                    cursor: pointer;
+                    //cursor: merdalae;
+
+                }
+            }
+        }
+        .itemList {
+            display: flex;
+            flex-wrap: wrap;
+            padding:10px;
+            
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 300px;
+                overflow: hidden;
+                background-color: #666;
+                color:#fff;
+                flex-basis: calc(100% / 7 - 4px);
+                margin: 2px;
+                position: relative;
+                &.sun {background-color: #f00;}
+                &.sat {background-color: rgb(223, 90, 1);}
+                &.blank {background-color: transparent;pointer-events: none;}
+                &.today {background-color: rgb(3, 132, 172);}
+                &.on {border: 3px solid #111;}
+                &:before {
+                    content:"";
+                    display: block;
+                    padding-top: 100%;
+                }
+                > span {
+                    position: absolute;
+                    left:0;
+                    top:0;
+                    right:0;
+                    bottom:0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

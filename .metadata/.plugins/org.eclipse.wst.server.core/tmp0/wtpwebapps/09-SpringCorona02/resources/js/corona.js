@@ -57,6 +57,49 @@ $("body").on("click","#coronaList > li",function(){
                     })
 });
 
+//////////////////calendar///////////////////////////////
 
+let now = new Data();
+let firstDay  = new Data(now.getFullYear(),now.getMonth(),1);
+const  dayList = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+const monthList = ["january","february","march","april","may","june","july","august","september","october","november","december"];
+const leapYear = [31,29,31,30,31,30,31,31,30,31,30,31]; //윤년
+const noneleapYear = [31,28,31,30,31,30,31,31,30,31,30,31]; // 평년
+//console.log(firstYoil);
 
+let pageYear;
+
+function makeCalendar(pickedYear,pickedMonth){
+    firstDay = new Date(pickedYear,pickedMonth);
+    const firstYear = firstDay.getFullYear();
+    const month = monthList[pickedMonth];
+
+    //윤년판단
+    if(firstYear  % 4 ==  0){
+        if(firstYear % 100 == 0){
+            pageYear = noneleapYear; // 윤년아님
+        }else{
+            pageYear = leapYear; // 윤년
+        }
+    }
+    if(firstYear % 400 == 0){
+        pageYear = leapYear;
+    }
+    $("#calendar .monthTitle .year").text(pickedYear);
+    $("#calendar .monthTitle .month").text(month);
+
+    let count = 1;
+    $("#calendar .dates").html("");
+    for(let i=0; i <42; i++){
+        if(i<firstDay.getDay()){
+            $("#calendar .dates .itemList").append('<li class="blank"><span></span></li>');
+        }else{
+            $("#calendar .dates .itemList").append('<li><span>${count}</span></li>');
+            count++;
+        }
+        
+    }
+}
+
+makeCalendar(2021,5);
 

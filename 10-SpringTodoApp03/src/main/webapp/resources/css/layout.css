@@ -1,0 +1,43 @@
+html { font-size: 10px; }
+
+body { font-family: "Roboto","Noto Sans KR"; font-size: 1.6rem; background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05) 1px, 0, transparent 5%) #333; overflow: hidden; }
+
+.card #header #logo { margin-left: 50px; }
+
+.card #header #logo a { display: block; line-height: 50px; height: 50px; font-weight: 900; font-size: 20px; padding: 0; }
+
+.card #header #logo a span { font-weight: 100; }
+
+#header { position: fixed; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; background-color: #fff; z-index: 2; }
+
+#header #logo { margin-left: 50px; }
+
+#header #logo a { display: block; padding: 15px 0; }
+
+#header #logo a img { height: 20px; }
+
+#header #gnb .gnbList { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#header #gnb .gnbList li { position: relative; }
+
+#header #gnb .gnbList li.on:after { content: ''; display: block; position: absolute; width: 5px; height: 5px; background-color: #f00; left: 50%; bottom: 5px; -webkit-transform: translateX(-50%); transform: translateX(-50%); border-radius: 100%; }
+
+#header #gnb .gnbList li a { height: 50px; line-height: 50px; padding: 0 30px; font-size: 1.4rem; font-weight: 500; }
+
+#header .utilMenu { font-size: 1.4rem; font-weight: 500; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+#header .utilMenu a { display: block; height: 50px; line-height: 50px; padding: 0 30px; border-left: 1px solid #d9d9d9; position: relative; }
+
+#header .utilMenu a .material-icons { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.gameCover { display: none; position: fixed; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); z-index: 999; }
+
+.gameCover .contents { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); text-align: center; }
+
+.gameCover .contents .title { font-size: 5rem; color: #fff; font-weight: bold; }
+
+.gameCover .contents button { font-size: 2rem; padding: 20px 50px; border: none; border-radius: 10px; background-color: #f0d01b; -webkit-box-shadow: 0 10px 0 #cbae0d; box-shadow: 0 10px 0 #cbae0d; margin-top: 20px; outline: none; }
+
+.gameCover .contents button:active { -webkit-box-shadow: none; box-shadow: none; -webkit-transform: translateY(10px); transform: translateY(10px); }
+
+.gameCover .contents .totalResult { color: #fff; font-size: 5rem; margin-top: 30px; text-align: center; }
