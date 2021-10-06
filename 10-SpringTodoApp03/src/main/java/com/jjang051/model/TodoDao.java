@@ -39,6 +39,25 @@ public class TodoDao {
 		todoList = sqlSession.selectList("getTodoList",pickedDate);
 		return todoList;
 	}
+	
+	public int deleteTodo(int no) {
+		int result = 0;
+		SqlSession sqlSession = sqlFSessionFactory.openSession();
+		result = sqlSession.delete("deleteTodo",no);
+		sqlSession.commit();
+		sqlSession.close();
+		return result;
+	}
+	
+	
+	public int updateTodo(TodoDto todoDto) {
+		int result = 0;
+		SqlSession sqlSession = sqlFSessionFactory.openSession();
+		result = sqlSession.update("updateTodo",todoDto);
+		sqlSession.commit();
+		sqlSession.close();
+		return result;
+	}
 }
 
 

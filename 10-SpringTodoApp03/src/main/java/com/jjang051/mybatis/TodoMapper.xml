@@ -13,4 +13,10 @@
 	<select id="getTodoList" parameterType="String" resultType="TodoDto">
 		SELECT * FROM TODO WHERE PICKEDDATE = #{pickedDate} ORDER BY NO DESC
 	</select>
+	<delete id="deleteTodo" parameterType="Integer">
+		DELETE FROM TODO WHERE NO = #{no}
+	</delete>
+	<update id="updateTodo" parameterType="TodoDto">
+		UPDATE TODO SET DONE = #{done} WHERE NO = #{no}
+	</update>
 </mapper>

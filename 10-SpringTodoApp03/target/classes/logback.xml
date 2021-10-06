@@ -22,7 +22,7 @@
 	</appender>
 
 	<logger name="org.springframework" level="info" />
-	<logger name="com.jjang051" level="debug" />
+	<!-- <logger name="com.jjang051" level="debug" /> -->
 
 	<root level="debug">
 		<appender-ref ref="CONSOLE" />

@@ -6,9 +6,7 @@ h1 {
 }
 
 .calendarWrap {
-  position: absolute;
-  top: 50px;
-  right: 50px;
+  width: 100%;
 }
 
 .calendarWrap .dateBox input {
@@ -30,7 +28,7 @@ h1 {
 }
 
 #calendar {
-  width: 400px;
+  width: 100%;
   background: #fff;
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);

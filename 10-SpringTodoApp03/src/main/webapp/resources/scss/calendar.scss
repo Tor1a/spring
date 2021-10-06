@@ -6,9 +6,7 @@ h1 {
     padding:50px 0;
 }
 .calendarWrap {
-    position: absolute;
-    top:50px;
-    right:50px;
+    width:100%;
     .dateBox input {
         margin-bottom: 20px;
         width:400px;
@@ -28,14 +26,85 @@ h1 {
     }
 }
 #calendar {
-    width:400px;
+    width:100%;
     background: #fff;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
-    padding:15px;
+    //border-radius: 15px;
+    //box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    padding:10px;
+    .todo {
+        background-color: #666;
+        text-align: center;
+        .day {
+            color:#fff;
+            font-size: 20px;
+            padding: 15px 0 0;
+        }
+        .date {
+            font-size:64px;
+            margin: 30px 0;
+            color:#fff;
+            @include longShadow(darken(#666,10),right,80);
+        }
+        .inputBox {
+            width:100%;
+            display: flex;
+            outline: none;
+            padding:0 10px;
+            #todoTxt {
+                box-sizing: border-box;
+                height: 40px;
+                width:calc(100% - 40px);
+            }
+        }
+        .btnAdd {
+            width:40px;
+            height:40px;
+            background-color: rgb(2, 117, 184);
+            color:#fff;
+            &.not {
+                pointer-events: none; // css에서 자바스크립트 이벤트 막기...
+            }
+        }
+        .todoList {
+            color:#fff;
+            padding:10px;
+            font-size: 14px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                border-bottom: 1px solid #fff;
+                position: relative;
+                padding-left: 10px;
+                &.done:before {
+                    width:calc(100% - 50px);
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    pointer-events: none;
+                    left:0;
+                    top:13px;
+                    width:2px;
+                    height: 2px;
+                    background-color: #f00;
+                    transition: all 0.25s ease;
+                }
+                .btnDelete {
+                    color:#fff;
+                }
+            }
 
+        }
+    }
     .calendarBox {
         width:100%;
+
+        
+
         .header {
             display: flex;
             height: 60px;

@@ -4,7 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 <title>Insert title here</title>
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,13 +17,13 @@
 <link href="css/calendar.css" rel="stylesheet"></link>
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/gsap/gsap.min.js"></script>
-<script src="js/corona.js" defer></script>
+<script src="js/todo.js" defer></script>
 </head>
 <body>
     <div class="calendarWrap">
         <div id="calendar">
             <div class="todo">
-            	<div class="day" id="pickedDay">THU</div>`
+            	<div class="day" id="pickedDay">THU</div>
             	<div class="date" id="pickedDate">01</div>
             	<div class="inputBox">
             		<input type="text" name="todo" id="todoTxt">
